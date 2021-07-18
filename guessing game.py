@@ -1,6 +1,8 @@
 import random
-the_number = random.randint(1, 10)
-guess = int(input("Guess a number between 1 and 10: "))
+x = int(input("Low a number: "))
+y = int(input("High a number: "))
+the_number = random.randint(x, y)
+guess = int(input("Guess a number between "+ str(x) +" and " + str(y)+ " : "))
 while guess != the_number:
     if guess > the_number:
         print(guess, "was too high. Try again")
